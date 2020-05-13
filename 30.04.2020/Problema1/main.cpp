@@ -242,10 +242,10 @@ int pozvec(int &n, int a[], bool insFlag)
 int main() {
     int n,a[100],t1,t2,t3;
     citire(n,a,"file.txt");//Un vector
+    
     punct counter;
     //Subpunct a Iterativ:
     //counter=readCodif(n,a);
-
     //Subpunct a Recursiv:
     counter=readCodifRec(n,a);
 
@@ -253,7 +253,7 @@ int main() {
     predominant(counter);
 
     //subpunctele c si d.Daca delFlag(ultimul parametru) este true atunci subpunctul d altfel subpuctul c
-    idenTrip(n,a,0);
+    //idenTrip(n,a,0);
 
     //Subpunctul e
     std::cout<<sequence(n,a,1)<<"\n";
@@ -262,5 +262,5 @@ int main() {
     std::cout<<pozvec(n,a,1)<<"\n";
 
     //Afisare vector codificat/inserat 
-    //afis(n,a);
+    afis(n,a);
 }
